@@ -40,5 +40,21 @@ public class Students {
     public void setId(int id) {
         this.id = id;
     }
+
+    public void getName() {
+        System.out.println("姓名：" + this.name);
+    }
+
+    public void getAge() {
+        System.out.println("年龄：" + this.age);
+    }
+
+    public void getSex() {
+        System.out.println("性别：" + this.sex);
+    }
+
+    public void getId() {
+        System.out.println("学号：" + this.id);
+    }
 }
 
