@@ -24,5 +24,21 @@ public class Students {
         this(name, age, sex);
         this.id = id;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
 
