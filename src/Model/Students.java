@@ -46,15 +46,23 @@ public class Students {
     }
 
     public void getAge() {
+        if (this.age == 0) throw new NullException("年龄未设置");
         System.out.println("年龄：" + this.age);
     }
 
     public void getSex() {
+        if (this.sex == null) throw new NullException("性别未设置");
         System.out.println("性别：" + this.sex);
     }
 
     public void getId() {
+        if (this.id == 0) throw new NullException("学号未设置");
         System.out.println("学号：" + this.id);
     }
 }
 
+class NullException extends RuntimeException {
+    NullException(String message) {
+        super(message);
+    }
+}
